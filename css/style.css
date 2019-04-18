@@ -1,0 +1,41 @@
+/*
+    colours:
+    primary branding    = #d8b24f
+    header 4            = #434344
+    for grey paragraphs = #878e94
+    font-family         = 'Montserrat', sans-serif
+    box-shadow: 0 4px 44px 0 rgba(0, 0, 0, 0.07);
+*/
+
+html, body {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	display: flex;
+	background-image: url("../img/background-image.png");
+	background-size: cover;
+	padding: 5% 20%;
+	color: white;
+	border-top: 6px solid #d8b24f;
+}
+
+.port-view {
+	margin: 5% 20%;
+}
+
+#profile-image {
+	height: 200px;
+	margin-right: 50px;
+	border: 6px solid #d8b24f;
+	border-radius: 50%;
+}
+
+a {
+	color: white;
+	font-size: 30px;
+	margin-right: 50px;
+}
+
+
