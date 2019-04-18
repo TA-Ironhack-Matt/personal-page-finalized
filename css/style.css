@@ -7,35 +7,88 @@
     box-shadow: 0 4px 44px 0 rgba(0, 0, 0, 0.07);
 */
 
-html, body {
-	margin: 0px;
-	font-family: 'Montserrat', sans-serif;
+html,
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-	display: flex;
-	background-image: url("../img/background-image.png");
-	background-size: cover;
-	padding: 5% 20%;
-	color: white;
-	border-top: 6px solid #d8b24f;
+  display: flex;
+  background-image: url("../img/background-image.png");
+  background-size: cover;
+  padding: 5% 20%;
+  color: white;
+  border-top: 6px solid #d8b24f;
 }
 
 .port-view {
-	margin: 5% 20%;
+  margin: 5% 20%;
 }
 
 #profile-image {
-	height: 200px;
-	margin-right: 50px;
-	border: 6px solid #d8b24f;
-	border-radius: 50%;
+  height: 200px;
+  margin-right: 50px;
+  border: 6px solid #d8b24f;
+  border-radius: 50%;
 }
 
 a {
-	color: white;
-	font-size: 30px;
-	margin-right: 50px;
+  color: white;
+  font-size: 30px;
+  margin-right: 50px;
 }
 
+/* wrapped everything except the footer in a new section and gave it a different flex direction in order to stack the elements underneath each other. As a column.  */
+section {
+  flex-direction: column;
+}
 
+/* i've added the following class to this section to give it padding on the left and right to create the port view. */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 20%;
+}
+
+/* The first element in the section is the about block. This block has a box shadow that i generated with the example generator that i showed you during the workshop.  */
+.about {
+  box-shadow: 0 4px 44px 0 rgba(0, 0, 0, 0.07);
+  text-align: center;
+  padding: 80px;
+  margin: 40px 0px;
+}
+
+/* the job element has the display: flex property to align the items next to each other.  */
+.job {
+  display: flex;
+  padding: 40px;
+}
+
+/* to add a bit of space between the image and the text i added some margin on the right of the image. */
+.job img {
+  margin-right: 55px;
+  align-self: flex-start;
+}
+
+h3 {
+  color: #d8b24f;
+}
+
+footer {
+  background-color: #d8b24f;
+}
+
+footer {
+  color: white;
+}
+footer p {
+  color: white;
+}
+
+/* by giving align-self: flex-end; to the logo container i change to position to the bottom of the footer. */
+
+.logo-container {
+  align-self: flex-end;
+}
